@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+__pycache__/
+
+# Saves do jogo usados nos testes (dados pessoais)
+.teste/
+*.sav

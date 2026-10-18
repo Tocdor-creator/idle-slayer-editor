@@ -1,0 +1,9 @@
+{
+  "name": "idle-slayer-editor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Editor local do save do Idle Slayer (PC/Steam)",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

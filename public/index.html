@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editor de Save — Idle Slayer</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">⚔</span>
+      <div>
+        <strong>Idle Slayer</strong>
+        <small>Editor de Save</small>
+      </div>
+    </div>
+    <div class="file-info" id="fileInfo">Carregando…</div>
+    <div class="actions">
+      <button id="btnChanges" class="pill" hidden></button>
+      <button id="btnReload" class="ghost" title="Descarta as alterações e lê o save atual do jogo">Recarregar</button>
+      <label class="ghost button" title="Abrir um .sav de outro lugar (ex.: backup ou celular)">
+        Abrir arquivo…<input type="file" id="fileInput" accept=".sav,.txt,.json" hidden>
+      </label>
+      <button id="btnDownload" class="ghost" title="Baixar o save editado como arquivo">Baixar .sav</button>
+      <button id="btnBackups" class="ghost">Backups</button>
+      <button id="btnSave" class="primary" disabled>Salvar no jogo</button>
+    </div>
+  </header>
+  <div id="banner" class="banner" hidden></div>
+  <div class="layout">
+    <nav id="tabs" class="sidebar"></nav>
+    <main id="main"><p class="empty">Carregando catálogo…</p></main>
+  </div>
+  <div id="toast" class="toast" hidden></div>
+  <dialog id="dialog"></dialog>
+  <script src="/app.js"></script>
+</body>
+</html>
